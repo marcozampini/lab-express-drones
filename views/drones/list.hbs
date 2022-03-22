@@ -5,9 +5,13 @@
       <h3>{{name}}</h3>
       <p>{{propellers}}</p>
       <p>{{maxSpeed}}</p>
-      <a href='../drones/{{id}}'>See more</a>
+      <a href='/drones/{{id}}'>See more</a>
       |
-      <a href='../drones/{{id}}/edit'>Edit drone</a>
+      <a href='/drones/{{id}}/edit'>Edit drone</a>
+      |
+      <form action='/drones/{{id}}/delete' method='post'>
+        <input type='submit' value='Delete drone' />
+      </form>
     </div>
   {{/each}}
 </div>
