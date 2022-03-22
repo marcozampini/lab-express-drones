@@ -2,10 +2,12 @@
 <div class='list-items'>
   {{#each drones}}
     <div class='item'>
-      <h3>{{this.name}}</h3>
-      <p>{{this.propellers}}</p>
-      <p>{{this.maxSpeed}}</p>
-      <a href='../drones/{{this.id}}'>See more</a>
+      <h3>{{name}}</h3>
+      <p>{{propellers}}</p>
+      <p>{{maxSpeed}}</p>
+      <a href='../drones/{{id}}'>See more</a>
+      |
+      <a href='../drones/{{id}}/edit'>Edit drone</a>
     </div>
   {{/each}}
 </div>
